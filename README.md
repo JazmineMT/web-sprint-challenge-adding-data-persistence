@@ -91,6 +91,35 @@ Your finished project must include all of the following requirements:
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. You will be scored on your adherence to proper code style and good organization. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
+
+## TODO 
+[] - create package.json
+[] - npm i
+[] - npm express
+[] - npm knex
+    []- create knex file
+[] - create & setup
+    [] - index.js
+    [] - server.js
+    [] -dbConfig
+
+[] - Create migrations
+    [] - create tables from drafted DB
+    [] - Check SQL lite
+    
+[] Create seeds
+    [] - fake data
+    [] - test on SQL lite
+[] create data acces endpoints
+    [] - getResources()
+    [] - addResources()
+    [] - addProject()
+    [] - getProjects()
+    [] - addTasks()
+    [] - getTasks() 
+
+
+
 ### Task 3: Stretch Goals
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
