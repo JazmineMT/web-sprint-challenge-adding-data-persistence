@@ -5,7 +5,7 @@ exports.up = function(knex) {
         tbl.increments();
         tbl.string('name')
         .notNullable();
-        tbl.string('description')
+        tbl.string('project_description')
         .notNullable();
         tbl.boolean('project_completed')
         .defaultTo('false')
@@ -21,7 +21,7 @@ exports.up = function(knex) {
         .inTable('projects')
         .onUpdate('CASCADE')
         .onDelete('CASCADE');
-        tbl.text('description')
+        tbl.text('task_description')
         .notNullable();
         tbl.text('notes');
         tbl.boolean('task_completed')
