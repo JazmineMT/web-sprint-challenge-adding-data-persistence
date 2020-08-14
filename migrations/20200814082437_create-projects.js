@@ -8,6 +8,7 @@ exports.up = function(knex) {
         tbl.string('description')
         .notNullable();
         tbl.boolean('project_completed')
+        .defaultTo('false')
         .notNullable();
 
     })
@@ -24,6 +25,7 @@ exports.up = function(knex) {
         .notNullable();
         tbl.text('notes');
         tbl.boolean('task_completed')
+        .defaultTo('false')
         .notNullable();
 
     })

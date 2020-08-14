@@ -1,5 +1,6 @@
 
 const db = require('../data/dbConfig')
+const { select } = require('../data/dbConfig')
 
 
 module.exports = {
@@ -32,7 +33,10 @@ function addProjects(newProject){
 }
 
 function getTasks(){
-    return db('tasks')
+    return db('projects')
+    .select('*', 'description')
+    .from('projects as p')
+    .join('tasks as t', 'p.id', 't.id',)
 }
 
 function addTasks(newTask){
